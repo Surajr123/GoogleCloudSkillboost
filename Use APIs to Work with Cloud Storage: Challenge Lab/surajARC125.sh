@@ -13,16 +13,6 @@ BOLD=$'\033[1m'
 
 clear
 
-
-# Function to display step messages
-step() {
-    echo "${STEP_COLOR}${BOLD}▶ $1${RESET}"
-}
-
-success() {
-    echo "${SUCCESS_COLOR}✓ $1${RESET}"
-}
-
 # Step 1: Create bucket1.json
 step "Creating bucket1.json configuration..."
 cat > bucket1.json <<EOF
